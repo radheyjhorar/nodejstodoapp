@@ -1,0 +1,130 @@
+
+main.home-main {
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+  align-items: center;
+}
+
+main.home-main>div {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+main.home-main  .add-task-btn div {
+  cursor: pointer;
+  background-color: rgb(59 130 246 / 0.1);
+  border-radius: 20px;
+  padding: 2px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+main.home-main .add-task-btn div>span:nth-child(1) {
+  font-size: 28px;
+  color: rgb(59 130 246 / 0.8);
+}
+
+main.home-main .add-task-btn div>span:nth-child(2) {
+  font-size: 14px;
+}
+
+
+main.home-main .add-task-input>form>div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  border: 2px solid rgb(59 130 246 / 0.5);
+  background-color: rgb(59 130 246 / 0.1);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+main.home-main .add-task-input>form>div>input {
+  padding: 10px;
+  padding-left: 2px;
+}
+
+main.home-main .add-task-input>form>div>input,
+main.home-main .add-task-input>form>div>textarea {
+  max-width: 100%;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+
+main.home-main .add-task-input>form>div>textarea {
+  overflow: auto;
+}
+
+main.home-main .add-task-input>form>div>textarea::-webkit-scrollbar {
+  display: none;
+}
+
+main.home-main .add-task-input>form>button {
+  display: block;
+  margin-left: auto;
+  background-color: rgb(59 130 246 / 0.1);
+  border: 1px solid rgb(59 130 246 / 0.5);
+  outline: none;
+  padding: 2px 12px;
+  cursor: pointer;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+
+main.home-main .tasks {
+  margin-top: 2rem;
+}
+
+main.home-main .tasks>div {
+  border: 4px solid rgb(59 130 246 / 0.5);
+  background-color: rgb(59 130 246 / 0.1);
+  padding: 12px;
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+main.home-main .tasks>div>div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+main.home-main .tasks>div>div .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main.home-main .tasks>div>div .desc {
+  font-size: 14px;
+}
+
+main.home-main  .add-task-input {
+  display: none;
+}
+
+main.home-main .tasks>div > button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+  background: #fff;
+  border: 1px solid #ff00004f;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+main.home-main .tasks>div > button:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}

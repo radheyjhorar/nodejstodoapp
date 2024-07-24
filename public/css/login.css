@@ -1,0 +1,47 @@
+main.login-main {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+main.login-main form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 300px;
+  margin-top: 2rem;
+  gap: 20px;
+}
+
+main.login-main form input,
+main.login-main form button {
+  padding: 10px ;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+main.login-main form input {
+  background-color: rgb(59 130 246 / 0.1);
+  border: 1px solid rgb(59 130 246 / 0.5);
+  outline-color: rgb(59 130 246 / 0.7);
+}
+
+main.login-main form button {
+  outline: none;
+  border: 0;
+  background-color: rgb(59 130 246 );
+  color: #fff;
+}
+
+
+main.login-main .sign-up-option {
+  text-align: end;
+  margin: 10px 2px;
+}
+
+main.login-main .sign-up-option a {
+  text-decoration: underline;
+  
+}

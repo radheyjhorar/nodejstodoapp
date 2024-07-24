@@ -1,0 +1,19 @@
+<div class="tasks">
+  <% tasks && tasks.forEach((item, index)=> { %>
+    <div id="<%= item.id %>">
+      <span>
+        <%= index+1 %>.
+      </span>
+      <div>
+        <span class="title">
+          <%= item.title %>
+        </span>
+        <span class="desc">
+          <%= item.description %>
+        </span>
+      </div>
+
+      <button onclick="deleteTask('<%= item.id %>')">❌</button>
+    </div>
+    <% }) %>
+</div>
